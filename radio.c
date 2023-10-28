@@ -393,7 +393,8 @@ void RADIO_configure_channel(const unsigned int VFO, const unsigned int configur
 	else
 	{  // don't do agc in FM mode
 		BK4819_DisableAGC();
-		BK4819_WriteRegister(0x13, (orig_lnas << 8) | (orig_lna << 5) | (orig_mixer << 3) | (orig_pga << 0));
+		// REG_13 already reset in above func
+		//BK4819_WriteRegister(0x13, (orig_lnas << 8) | (orig_lna << 5) | (orig_mixer << 3) | (orig_pga << 0));
 	}
 #else
 	if (p_vfo->am_mode)
@@ -403,7 +404,8 @@ void RADIO_configure_channel(const unsigned int VFO, const unsigned int configur
 	else
 	{  // don't do agc in FM mode
 		BK4819_DisableAGC();
-		BK4819_WriteRegister(0x13, (orig_lnas << 8) | (orig_lna << 5) | (orig_mixer << 3) | (orig_pga << 0));
+		// REG_13 already reset in above func
+		//BK4819_WriteRegister(0x13, (orig_lnas << 8) | (orig_lna << 5) | (orig_mixer << 3) | (orig_pga << 0));
 	}
 #endif
 
