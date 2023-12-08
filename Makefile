@@ -92,7 +92,7 @@ ENABLE_SIDE_BUTT_MENU            := 0
 ENABLE_KEYLOCK                   := 0
 # panadapter 1.5kB
 ENABLE_PANADAPTER                := 1
-ENABLE_PANADAPTER_PEAK_FREQ      := 0
+ENABLE_PANADAPTER_PEAK_FREQ      := 1
 # single VFO 1.5kB
 ENABLE_SINGLE_VFO_CHAN           := 1
 
